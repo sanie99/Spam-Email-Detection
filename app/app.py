@@ -7,8 +7,8 @@ st.write("This application detects whether an email is spam or not using a train
 st.write("Please enter the email content below:")
 
  # Load the trained models
-tfidf_model = pickle.load(open('../models/tfidf_model.pkl', 'rb'))
-multinomial_model = pickle.load(open('../models/multinomial_model.pkl', 'rb'))
+tfidf_model = pickle.load(open('models/tfidf_model.pkl', 'rb'))
+multinomial_model = pickle.load(open('models/multinomial_model.pkl', 'rb'))
 
 email_content = st.text_area("Email Content")
 
